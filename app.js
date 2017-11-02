@@ -25,5 +25,9 @@ console.log(addNumbers(7, 3));
 console.log(noExplicitReturnReturnsUndefined());
 // undefined
 
+// here must append () after printBacon
 printBacon();
 
+// after timeout execute function, timeout in msec
+// here must not append () after printBacon
+setTimeout(printBacon, 2000);
