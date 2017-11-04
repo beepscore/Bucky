@@ -1,5 +1,5 @@
 # Purpose
-Do node tutorial.
+Do node tutorial as a refresher.
 
 # Reference
 
