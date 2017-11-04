@@ -34,3 +34,8 @@ console.log(path.extname(websiteAbout));
 setInterval(function () {
     console.log("beef");
 }, 2000);
+
+console.log(__dirname);
+// /Users/stevebaker/Documents/projects/javascriptProjects/NodeProjects/Bucky/12_core_modules
+console.log(__filename);
+// /Users/stevebaker/Documents/projects/javascriptProjects/NodeProjects/Bucky/12_core_modules/app12.js
