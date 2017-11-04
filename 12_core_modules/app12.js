@@ -29,3 +29,8 @@ console.log(path.basename(websiteAbout));
 console.log(path.extname(websiteAbout));
 // .html
 
+////////
+// setInterval fires repeatedly, setTimeout fires once
+setInterval(function () {
+    console.log("beef");
+}, 2000);
