@@ -1,6 +1,7 @@
 var http = require('http');
 
-// callback method
+// callback function, doesn't "return" anything.
+// caller supplies response object, method writes to it and calls end()
 // in terminal start server via node server13.js
 // in browser enter ip address 0.0.0.0:8888 or localhost:8888
 // terminal log shows browser makes 2 requests
