@@ -6,20 +6,20 @@ var http = require('http');
 
 var app = connect();
 
-function middleware1(request, response, next) {
-    console.log("Bacon");
+function profile(request, response, next) {
+    console.log('User requested profile');
     // use next method on the stack
     next();
 }
 
-function middleware2(request, response, next) {
-    console.log("Tuna");
+function forum(request, response, next) {
+    console.log('User requested forum');
     next();
 }
 
 // use middleware in a stack
-app.use(middleware1);
-app.use(middleware2);
+app.use('/profile', profile);
+app.use('/forum', forum);
 
 http.createServer(app).listen(8888);
 console.log("Server is running...");
